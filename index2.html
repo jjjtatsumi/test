@@ -1,0 +1,655 @@
+<!doctype html>
+    <html class="no-js" lang=""></html>
+    <meta charset="utf-8">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="moov.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+ <header>
+     <div class="title">
+     <h2>みつばちミュージアム</h2>
+     <!-- <p>東京都美術館ｘ東京藝術大学　とびらプロジェクト</p> -->
+     </div>
+  </header>
+   
+ <!--Wall Papaer-->
+ <div class="sugoroku">
+      <img src="img/mitsubachi.jpg">   
+ </div>
+   
+
+ <!--Animal icon-->
+ <div class="animal">
+     <div style="position:absolute; top:312px; left:940px">
+        <img src="img/saru2.png" w idth="60px" height="60px"cmanOMat="move"></div>
+        
+        <div style="position:absolute; top:312px; left:1005px">
+            <img src="img/usagi2.png" width="60px" height="60px" cmanOMat="move"></div>
+     
+            <div style="position:absolute; top:312px; left:1070px">
+                <img src="img/inu2.png" width="60px" height="60px" cmanOMat="move"></div>
+        
+                <div style="position:absolute; top:312px; left:1135px">
+                    <img src="img/tora2.png" width="60px" height="60px" cmanOMat="move"></div>
+            
+                    <div style="position:absolute; top:312px; left:1200px">
+                      <img src="img/buta2.png" width="60px" height="60px" cmanOMat="move"></div>
+ </div>
+            
+                
+ <!--dice-->
+  <div class="dice">
+     <div style="position:absolute; top:80px; left:1000px">
+         <iframe src="https://stopwatchtimer.yokochou.com/dice.html" width="200" height="200">
+           </iframe>
+         <a href="https://stopwatchtimer.yokochou.com/dice.html" target="_blank">
+         <p>https://stopwatchtimer.yokochou.com/dice.html</p></a>
+      </div>
+  </div>
+
+
+  
+  <!---表組-->
+  <div style="position:absolute; top:370px; left:935px">
+     <table border="1" height="200" width="360">
+         <tr>
+            <th width="60">名前</th>
+            <th width="75">お駄賃</th>
+            <th width="75">花粉</th>
+            <th width="75">蜜</th>
+            <th width="75">たべもの</th>
+         </tr>
+         <!--メンバー-->
+         <tr>
+            <td height="50">おさる</td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+         </tr>
+         <tr>
+            <td height="50">ぴょん</td>
+            <td>　　</td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+         </tr>
+         <tr>
+            <td height="50">ぽち</td>
+            <td>　　</td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+         </tr>
+         <tr>
+            <td height="50">トラ吉</td>
+            <td>　　</td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+         </tr>
+         <tr>
+            <td height="50">ぶー太</td>
+            <td>　　</td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+          </tr>
+
+        </table>
+  </div>
+
+
+      <!--カウンタA1　-->
+        <style> button {color: rgba(41, 18, 245, 0.938);font-size: 0.6em;}</style>
+        
+        
+        <div style="position:absolute; top:405px; left:1005px">
+                <div id="disp-countA1"></div>
+                <button id="upA1">▲</button>
+                <button id="downA1">▼</button>
+                
+                <script>
+                    var disp_countA1 = document.getElementById("disp-countA1");
+                    var upA1 = document.getElementById("upA1");
+                    var downA1 = document.getElementById("downA1");
+                    var countA1 = 0;
+                    
+                    upA1.addEventListener('click', function(){
+                    countA1 += 1;
+                    disp_countA1.innerHTML = countA1;})
+                        
+                    downA1.addEventListener('click', function(){
+                    countA1 -= 1;
+                    disp_countA1.innerHTML = countA1;})
+                </script>
+        </div>
+
+        <!---- カウンタ A2--->
+        <div style="position:absolute; top:460px; left:1005px">
+                <div id="disp-countA2"></div>
+                <button id="upA2">▲</button>
+                <button id="downA2">▼</button>
+            
+            <script>
+                    var disp_countA2 = document.getElementById("disp-countA2");
+                    var upA2 = document.getElementById("upA2");
+                    var downA2 = document.getElementById("downA2");
+                    var countA2 = 0;
+                
+                    upA2.addEventListener('click', function(){
+                    countA2 += 1;
+                    disp_countA2.innerHTML = countA2;})
+                    
+                    downA2.addEventListener('click', function(){
+                    countA2 -= 1;
+                    disp_countA2.innerHTML = countA2;})
+                        
+                </script>
+        </div>
+        
+        <!---- カウンタ A3--->
+        <div style="position:absolute; top:518px; left:1005px">
+                <div id="disp-countA3"></div>
+                <button id="upA3">▲</button>
+                <button id="downA3">▼</button>
+            
+            <script>
+                var disp_countA3 = document.getElementById("disp-countA3");
+                var upA3 = document.getElementById("upA3");
+                var downA3 = document.getElementById("downA3");
+                var countA3 = 0;
+                
+                upA3.addEventListener('click', function(){
+                countA3 += 1;
+                disp_countA3.innerHTML = countA3;})
+                    
+                downA3.addEventListener('click', function(){
+                countA3 -= 1;
+                disp_countA3.innerHTML = countA3;})
+                        
+                </script>
+        </div>
+
+        <!---- カウンタ A4--->
+        <div style="position:absolute; top:572px; left:1005px">
+                <div id="disp-countA4"></div>
+                <button id="upA4">▲</button>
+                <button id="downA4">▼</button>
+            
+            <script>
+                var disp_countA4 = document.getElementById("disp-countA4");
+                var upA4 = document.getElementById("upA4");
+                var downA4 = document.getElementById("downA4");
+                var countA4 = 0;
+                
+                upA4.addEventListener('click', function(){
+                countA4 += 1;
+                disp_countA4.innerHTML = countA4;})
+                    
+                downA4.addEventListener('click', function(){
+                countA4 -= 1;
+                disp_countA4.innerHTML = countA4;})
+                        
+                </script>
+        </div>
+
+        <!---- カウンタ A5--->
+        <div style="position:absolute; top:630px; left:1005px">
+                <div id="disp-countA5"></div>
+                <button id="upA5">▲</button>
+                <button id="downA5">▼</button>
+            
+            <script>
+                var disp_countA5 = document.getElementById("disp-countA5");
+                var upA5 = document.getElementById("upA5");
+                var downA5 = document.getElementById("downA5");
+                var countA5 = 0;
+                
+                upA5.addEventListener('click', function(){
+                countA5 += 1;
+                disp_countA5.innerHTML = countA5;})
+                    
+                downA5.addEventListener('click', function(){
+                countA5 -= 1;
+                disp_countA5.innerHTML = countA5;})
+                        
+                </script>
+        </div>
+
+        <!---- カウンタ B1--->
+        <div style="position:absolute; top:405px; left:1080px">
+            <div id="disp-countB1"></div>
+                <button id="upB1">▲</button>
+                <button id="downB1">▼</button>
+            
+            <script>
+                var disp_countB1 = document.getElementById("disp-countB1");
+                var upB1 = document.getElementById("upB1");
+                var downB1 = document.getElementById("downB1");
+                var countB1 = 0;
+                
+                upB1.addEventListener('click', function(){
+                countB1 += 1;
+                disp_countB1.innerHTML = countB1;})
+                    
+                downB1.addEventListener('click', function(){
+                countB1 -= 1;
+                disp_countB1.innerHTML = countB1;})
+                        
+                </script>
+        </div>
+
+        <!---- カウンタ B2--->
+        <div style="position:absolute; top:460px; left:1080px">
+            <div id="disp-countB2"></div>
+            <button id="upB2">▲</button>
+            <button id="downB2">▼</button>
+            
+            <script>
+                var disp_countB2 = document.getElementById("disp-countB2");
+                var upB2 = document.getElementById("upB2");
+                var downB2 = document.getElementById("downB2");
+                var countB2 = 0;
+                
+                upB2.addEventListener('click', function(){
+                countB2 += 1;
+                disp_countB2.innerHTML = countB2;})
+                    
+                downB2.addEventListener('click', function(){
+                countB2 -= 1;
+                disp_countB2.innerHTML = countB2;})
+                        
+                </script>
+        </div>
+
+        <!---- カウンタ B3--->
+        <div style="position:absolute; top:518px; left:1080px">
+            <div id="disp-countB3"></div>
+     <button id="upB3">▲</button>
+     <button id="downB3">▼</button>
+    
+     <script>
+         var disp_countB3 = document.getElementById("disp-countB3");
+         var upB3 = document.getElementById("upB3");
+         var downB3 = document.getElementById("downB3");
+         var countB3 = 0;
+        
+         upB3.addEventListener('click', function(){
+         countB3 += 1;
+         disp_countB3.innerHTML = countB3;})
+            
+         downB3.addEventListener('click', function(){
+         countB3 -= 1;
+         disp_countB3.innerHTML = countB3;})
+                
+        </script>
+  </div>
+
+ <!---- カウンタ B4--->
+ <div style="position:absolute; top:572px; left:1080px">
+     <div id="disp-countB4"></div>
+     <button id="upB4">▲</button>
+     <button id="downB4">▼</button>
+    
+     <script>
+         var disp_countB4 = document.getElementById("disp-countB4");
+         var upB4 = document.getElementById("upB4");
+         var downB4 = document.getElementById("downB4");
+         var countB4 = 0;
+        
+         upB4.addEventListener('click', function(){
+         countB4 += 1;
+         disp_countB4.innerHTML = countB4;})
+            
+         downB4.addEventListener('click', function(){
+         countB4 -= 1;
+         disp_countB4.innerHTML = countB4;})
+     </script>
+  </div>
+
+ <!---- カウンタ B5--->
+ <div style="position:absolute; top:630px; left:1080px">
+     <div id="disp-countB5"></div>
+     <button id="upB5">▲</button>
+     <button id="downB5">▼</button>
+    
+     <script>
+         var disp_countB5 = document.getElementById("disp-countB5");
+         var upB5 = document.getElementById("upB5");
+         var downB5 = document.getElementById("downB5");
+         var countB5 = 0;
+        
+         upB5.addEventListener('click', function(){
+         countB5 += 1;
+         disp_countB5.innerHTML = countB5;})
+            
+         downB5.addEventListener('click', function(){
+         countB5 -= 1;
+         disp_countB5.innerHTML = countB5;})
+      </script>
+   </div>
+
+ <!---- カウンタ C1--->
+ <div style="position:absolute; top:405px; left:1155px">
+     <div id="disp-countC1"></div>
+     <button id="upC1">▲</button>
+     <button id="downC1">▼</button>
+    
+     <script>
+         var disp_countC1 = document.getElementById("disp-countC1");
+         var upC1 = document.getElementById("upC1");
+         var downC1 = document.getElementById("downC1");
+         var countC1 = 0;
+        
+         upC1.addEventListener('click', function(){
+         countC1 += 1;
+         disp_countC1.innerHTML = countC1;})
+            
+         downC1.addEventListener('click', function(){
+         countC1 -= 1;
+         disp_countC1.innerHTML = countC1;})       
+     </script>
+ </div>
+
+  <!---- カウンタ C2--->
+  <div style="position:absolute; top:460px; left:1155px">
+     <div id="disp-countC2"></div>
+     <button id="upC2">▲</button>
+     <button id="downC2">▼</button>
+    
+     <script>
+         var disp_countC2 = document.getElementById("disp-countC2");
+         var upC2 = document.getElementById("upC2");
+         var downC2 = document.getElementById("downC2");
+         var countC2 = 0;
+        
+         upC2.addEventListener('click', function(){
+         countC2 += 1;
+         disp_countC2.innerHTML = countC2;})
+            
+         downC2.addEventListener('click', function(){
+         countC2 -= 1;
+         disp_countC2.innerHTML = countC2;})
+      </script>
+   </div>
+
+ <!---- カウンタ C3--->
+ <div style="position:absolute; top:518px; left:1155px">
+     <div id="disp-countC3"></div>
+     <button id="upC3">▲</button>
+     <button id="downC3">▼</button>
+    
+      <script>
+         var disp_countC3 = document.getElementById("disp-countC3");
+         var upC3 = document.getElementById("upC3");
+         var downC3 = document.getElementById("downC3");
+         var countC3 = 0;
+        
+         upC3.addEventListener('click', function(){
+         countC3 += 1;
+         disp_countC3.innerHTML = countC3;})
+            
+         downC3.addEventListener('click', function(){
+         countC3 -= 1;
+         disp_countC3.innerHTML = countC3;})    
+      </script>
+   </div>
+
+  <!---- カウンタ C4--->
+  <div style="position:absolute; top:572px; left:1155px">
+     <div id="disp-countC4"></div>
+     <button id="upC4">▲</button>
+     <button id="downC4">▼</button>
+    
+     <script>
+         var disp_countC4 = document.getElementById("disp-countC4");
+         var upC4 = document.getElementById("upC4");
+         var downC4 = document.getElementById("downC4");
+         var countC4 = 0;
+        
+         upC4.addEventListener('click', function(){
+         countC4 += 1;
+         disp_countC4.innerHTML = countC4;})
+            
+         downC4.addEventListener('click', function(){
+         countC4 -= 1;
+         disp_countC4.innerHTML = countC4;})      
+      </script>
+   </div>
+
+ <!---- カウンタ C5--->
+ <div style="position:absolute; top:630px; left:1155px">
+     <div id="disp-countC5"></div>
+     <button id="upC5">▲</button>
+     <button id="downC5">▼</button>
+    
+     <script>
+         var disp_countC5 = document.getElementById("disp-countC5");
+         var upC5 = document.getElementById("upC5");
+         var downC5 = document.getElementById("downC5");
+         var countC5 = 0;
+        
+         upC5.addEventListener('click', function(){
+         countC5 += 1;
+         disp_countC5.innerHTML = countC5;})
+            
+         downC5.addEventListener('click', function(){
+         countC5 -= 1;
+         disp_countC5.innerHTML = countC5;})       
+      </script>
+  </div>
+
+    <!---- カウンタ D1--->
+ <div style="position:absolute; top:405px; left:1230px">
+     <div id="disp-countD1"></div>
+     <button id="upD1">▲</button>
+     <button id="downD1">▼</button>
+    
+     <script>
+         var disp_countD1 = document.getElementById("disp-countD1");
+         var upD1 = document.getElementById("upD1");
+         var downD1 = document.getElementById("downD1");
+         var countD1 = 0;
+        
+         upD1.addEventListener('click', function(){
+         countD1 += 1;
+         disp_countD1.innerHTML = countD1;})
+            
+         downD1.addEventListener('click', function(){
+         countD1 -= 1;
+         disp_countD1.innerHTML = countD1;})       
+      </script>
+   </div>
+
+ <!---- カウンタ D2--->
+   <div style="position:absolute; top:460px; left:1230px">
+     <div id="disp-countD2"></div>
+     <button id="upD2">▲</button>
+     <button id="downD2">▼</button>
+    
+     <script>
+         var disp_countD2 = document.getElementById("disp-countD2");
+         var upD2 = document.getElementById("upD2");
+         var downD2 = document.getElementById("downD2");
+         var countD2 = 0;
+        
+         upD2.addEventListener('click', function(){
+         countD2 += 1;
+         disp_countD2.innerHTML = countD2;})
+            
+         downD2.addEventListener('click', function(){
+         countD2 -= 1;
+         disp_countD2.innerHTML = countD2;})
+      </script>
+   </div>
+
+   <!---- カウンタ D3--->
+   <div style="position:absolute; top:518px; left:1230px">
+     <div id="disp-countD3"></div>
+     <button id="upD3">▲</button>
+     <button id="downD3">▼</button>
+    
+     <script>
+         var disp_countD3 = document.getElementById("disp-countD3");
+         var upD3 = document.getElementById("upD3");
+         var downD3 = document.getElementById("downD3");
+         var countD3 = 0;
+                
+         upD3.addEventListener('click', function(){
+         countD3 += 1;
+         disp_countD3.innerHTML = countD3;})
+                    
+         downD3.addEventListener('click', function(){
+         countD3 -= 1;
+         disp_countD3.innerHTML = countD3;})      
+      </script>
+   </div>
+
+  <!---- カウンタ D4--->
+  <div style="position:absolute; top:572px; left:1230px">
+     <div id="disp-countD4"></div>
+     <button id="upD4">▲</button>
+     <button id="downD4">▼</button>
+            
+      <script>
+         var disp_countD4 = document.getElementById("disp-countD4");
+         var upD4 = document.getElementById("upD4");
+         var downD4 = document.getElementById("downD4");
+         var countD4 = 0;
+                
+         upD4.addEventListener('click', function(){
+         countD4 += 1;
+         disp_countD4.innerHTML = countD4;})
+                        
+         downD4.addEventListener('click', function(){
+         countD4 -= 1;
+         disp_countD4.innerHTML = countD4;})
+       </script>
+   </div>
+
+    <!---- カウンタ D5--->
+  <div style="position:absolute; top:630px; left:1230px">
+        <div id="disp-countD5"></div>
+        <button id="upD5">▲</button>
+        <button id="downD5">▼</button>
+    
+      <script>
+         var disp_countD5 = document.getElementById("disp-countD5");
+         var upD5 = document.getElementById("upD5");
+         var downD5 = document.getElementById("downD5");
+         var countD5 = 0;
+        
+         upD5.addEventListener('click', function(){
+         countD5 += 1;
+         disp_countD5.innerHTML = countD5;})
+            
+         downD5.addEventListener('click', function(){
+         countD5 -= 1;
+         disp_countD5.innerHTML = countD5;})       
+      </script>
+  </div>
+
+        <div class="footer">
+            <footer>(C)Tobira-Project</footer>
+        </div>
+
+
+<!-- ＊＊＊＊＊＊おまけコーナー ＊＊＊＊＊＊＊＊＊＊＊-->
+   <a href="index.html" >
+    <section class="link">
+    <button>すごろくミュージアム</button>
+    </a>
+     </section>
+
+ <div class="appendix">
+      <h1>おまけ　コーナー</h1>
+        <h2>〜みつばちのひみつ〜</h2>
+
+      <section class="section">
+          <section class="subsec">  
+          <h3>列柱みつばち</h3>
+          <p> 図中の赤く塗りつぶしてある部分がハツリの柱です。実際は、ロビーからギャラリーの終わりまで、建物全体を一直線に貫通するように並んでいることがわかります。これは「中庭にある」「ロビーにある」「ホワイエにある」「ギャラリーにある」…などという、特定の空間に付随する柱ではなくて、むしろ長大な列柱空間である！と言えます。
+              列柱の端から端までの距離は90mに及びます。東京都美術館のことを、ある人は「都市的」だと言い、ある人は「街並みのようだ」と言います。実際、この建物の地下には、90mという、一般的な建築を超えたスケールで列柱空間が存在していました。
+              イメージしてください。東京都美術館の「都市らしさ」「街並みらしさ」のシークエンスを。それは「エスプラナード」→「中庭」→「ロビー」→「ラウンジ」→「ホワイエ／ギャラリー」と続いています。それは、言い方を変えると、長大な列柱空間に沿って展開されている、ということです。「東京都美術館らしさ」を支える根幹は、この見えざる列柱空間にこそあります！
+             
+              （とびラー９期　石毛正修）
+         </p>
+          <img src="img/column2.png">
+          <img src="img/column1.png">
+         </section>
+       
+          <section class="subsec">
+             <h3>対話型みつばち</h3>
+             <p>対話しながら新たな発見や気付きを得る、対話型鑑賞。東京都美術館では、ビジュアル・シンキングストラテジー（Visual Thinking Strategies)という手法を取り入れています。静かに一人で観る鑑賞とはまた違った体験ができますよ！対話型鑑賞は企画展に合わせて不定期に開催していますので、ときどきウェブサイトをチェックしてくださいね！</p>
+             <img src="img/taiwa1.png">
+             <img src="img/taiwa2.png">
+          </section>
+        
+         <section class="subsec">
+             <h3>ワークみつばち</h3>
+             <p>東京都美術館と東京藝術大学の共同プロジェクトである『とびらプロジェクト』のアートコミュニケータ、通称『とびラー』は様々な場面で人と美術館、人と社会をつなぎ合わせます。
+                東京都美術館では、とびラーが企画した多くのワークショップが行われています。</p>
+                <img src="img/work1.png">
+                <img src="img/work2.png">
+         </section>
+            
+         <section class="subsec">
+             <h3>前川みつばち</h3>
+             <p>都美術館は前川國男がコルビュジエから抜け出した？といわれる６５〜７０歳の作品。それでもコルビュジエは、そんな作品の中に見え隠れしているように思えます。それは2010~12年のリニューアルで前川建築事務所に受け継がれ進化したのではと。
+             
+                (とびラー７期　宮﨑保和)</p>
+             <img src="img/maekawa1.png">
+         </section>
+                
+         <section class="subsec">
+             <h3>建築みつばち</h3>
+              <p>日本のモダニズム建築を牽引した建築家・前川國男が設計した東京都美術館を「とびらプロジェクト」（※）で活動するアート・コミュニケータ（とびラー）と一緒に楽しく散策します。
+              展覧会だけではなく「美術館の建物そのものも楽しんでほしい！」そんな思いから始まりました。建築家が込めた想い、歴史、建物の色・デザインといった建築を楽しむポイントを切り口に、当館の建築空間をとびラーと対話しながら味わいます。当日担当するとびラー1人1人のオリジナリティが発揮された独自のプログラムを行っています。</p>
+             <img src="img/kenchiku1.png">
+             <img src="img/kenchiku2.png">
+          </section>
+                    
+          <section class="subsec">
+             <h3>みつばちボード</h3>
+             <p>東京都美術館の特別展では、中学生までのこどもたちに磁気式のお絵かきボード「とびらボード」を無料で貸し出しています。 「とびらボード」は、消したり描いたり自由自在。展示室内で気に入った作品をじっくり観察して、スケッチにチャレンジしてください!!</p>
+              <img src="img/tobirabord1.png">
+              <img src="img/tobirabord2.png">
+           </section>
+                        
+          <section class="subsec">
+             <h3>みつばち鑑賞会</h3>
+              <P>普段は混雑している特別展を障害のある方が安心して鑑賞できるよう、休室日に開催する鑑賞会です。 事前申込制で特別展ごとに開催しています。アート・コミュニケータ（とびラー）が受付や移動のお手伝いをします。</P>
+              <img src="img/tokubetsu1.png">
+              <img src="img/tokubetsu2.png">
+          </section>
+                        
+          <section class="subsec">
+             <h3>みつばち情報室</h3>
+               <p>木製の本棚と家具が配された居心地のよい図書室では、美術図書や展覧会カタログ、美術雑誌などを自由に閲覧できます。特色ある所蔵資料として、教育普及に関連する資料（美術館などで制作されたセルフガイド［解説リーフレット］など）や、公募団体に関連する資料（美術や書の図録や作品集、雑誌など）が挙げられます。また、美術情報室では館の歴史に関するアーカイブズ資料も保管しています。開催中の展覧会の関連書籍も多数紹介しています。ぜひお気軽にお立ち寄りください。</p>
+                 <img src="img/artinfo.png">         
+          </section>
+
+          <section class="subsec">
+             <h3>『my Mitsubachi hole 85-2 花粉と影』</h3>
+                <p>東京都美術館のシンボルともなっている、門田温子　2020年の作品です。１２月８日　井上武吉の誕生日に、ホールにまっすぐに太陽の光が差し込みます。
+                 
+                 
+                    雲ひとつない快晴でした。まるで金環日食を見守るようでした。
+                    館長さんや フクシさん達、「いつも ありがとう」と言ってくれる いつものミューズのおじさん、警備のおじさん、一般のお客さまと一緒に、この瞬間を共にしました。
+                    不思議がる一般のお客さまに説明したら、偶然この瞬間に居合わせたことを とても喜んでくださいました。
+                    影が重なるということは聞いていましたが、sky holeの「hole」に 太陽がまっすぐ差し込むとは驚きでした。
+                    なんとも、神秘的。
+                  （とびラー９期　長尾純子）</p>
+                 <img src="img/myskyhole.png">
+            </section>
+
+           
+            </div>
+</body>
+                
+</html>
